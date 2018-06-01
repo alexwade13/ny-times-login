@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-/* Header */
+/* start Header */
 
 .App-logo {
   height: 26px;
@@ -35,4 +35,48 @@
 }
 
 /* end Header*/
+
+
+/* start form */
+.form-container {
+    max-width: 525px;
+
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+
+    font-family: nyt-franklin,arial,helvetica,sans-serif;
+}
+
+.form-container h2 {
+  font-weight: 500;
+  float: left;
+
+  display:block;
+
+  width:100%;
+  text-align: left;
+
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 6px;
+}
+
+.question {
+  margin: 0;
+  float:left;
+  color:#666666;
+
+ }
+
+.answer {
+  color:#6CABD3;
+}
+
 

@@ -3,7 +3,22 @@ import logo from './pics/nyt-logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      loggingIn: true,
+
+    }
+    this.changeAction = this.changeAction.bind(this)
+  }
+
+  changeAction(){
+    this.setState({loggingIn:!this.state.loggingIn})
+  }
+
   render() {
+    const { loggingIn } = this.state
     return (
       <div className="container">
         <div className="App">
@@ -14,9 +29,15 @@ class App extends Component {
               </a>
             </div>
           </header>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
+          <div className="form-container">
+            <h2>{loggingIn ? "Log In" : "Create Your Account"}</h2>
+            <p className="question">{loggingIn ? "Don't have an account?" :"Already have an account?"}
+              <a onClick={this.changeAction} className="answer"> {loggingIn ? "Create one >>" :"Log in >>"}</a>
+            </p>
+
+
+          </div>
+
         </div>
       </div>
     );
