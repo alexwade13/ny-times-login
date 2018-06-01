@@ -1,28 +1,38 @@
+.container{
+    width: auto;
+    max-width: 972px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
 .App {
   text-align: center;
 }
 
+/* Header */
+
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 26px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cecece;
+  min-height: 51px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 11px 0 8px 15px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.a-href-container {
+  max-width: 525px;
+  margin: auto;
 }
 
-.App-intro {
-  font-size: large;
+.a-href{
+  float: left;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+/* end Header*/
+
